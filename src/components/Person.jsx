@@ -1,16 +1,18 @@
 import Name from "./Name";
 
-const Person = (props) => {
-  console.log(props);
+const Person = ({ name, img, color = "Grey" }) => {
+  //   const { name, img, color } = props;
   return (
     <div>
-      <Name />
-      <img
-        src="https://cdn.pixabay.com/photo/2015/03/27/13/16/maine-coon-694730_640.jpg"
-        alt=""
-      />
-      <p>Color: Black </p>
+      <Name name={name} />
+      <img src={img} alt="cat" />
+      <p>Color: {color} </p>
     </div>
+    // <div>
+    //   <Name name={props.name} />
+    //   <img src={props.img} alt="cat" />
+    //   <p>Color: {props.color} </p>
+    // </div>
   );
 };
 

@@ -1,7 +1,7 @@
-const Name = () => {
+const Name = ({ name }) => {
   return (
     <div>
-      <p>hello ahmet</p>
+      <p>Hello {name}</p>
     </div>
   );
 };
