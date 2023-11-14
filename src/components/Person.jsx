@@ -1,13 +1,15 @@
 import Name from "./Name";
 
-const Person = () => {
+const Person = (props) => {
+  console.log(props);
   return (
     <div>
       <Name />
       <img
-        src="https://cdn.pixabay.com/photo/2012/06/19/10/32/owl-50267_640.jpg"
+        src="https://cdn.pixabay.com/photo/2015/03/27/13/16/maine-coon-694730_640.jpg"
         alt=""
       />
+      <p>Color: Black </p>
     </div>
   );
 };
